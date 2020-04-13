@@ -1,4 +1,5 @@
-# using SQL dataset from ~/Desktop/portfolio/data/test_db/employees.sql
+# using SQL dataset from ~/Desktop/portfolio/test_db/employees.sql
+# database :: git clone https://github.com/datacharmer/test_db.git
 
 from flask import Flask, render_template
 import pymysql
