@@ -17,9 +17,11 @@ class Database:
 
     def list_employees(self):
         self.cur.execute("SELECT first_name, last_name, gender FROM employees LIMIT 50")
-        result = self.cur.fetchall()
+        rows = self.cur.fetchall()
 
-        return result
+	#self.con.close()
+
+        return rows
 
 @app.route('/')
 def employees():
